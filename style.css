@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(imges/R.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+header{
+    position: relative;
+    /* border: 4px solid #555; */
+    width: 95%;
+    height: 90%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.750)), url(imges/R.jpeg);
+    /* background-color: #909090; */
+}
+
+header .notch{
+    width: 120px;
+    height: 22px;
+    background-color: #03000055;
+    backdrop-filter: blur(180px);
+    position: absolute;
+    left: 47%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .notch .mic{
+    width: 50px;
+    height: 4px;
+    margin-right: 10px;
+    border-radius: 100px;
+    background: #5e5e5e55;
+}
+
+header .notch .cam{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #5e5e5e55;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    /* border: 1px solid #fff; */
+    width:100%;
+    height: 10%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .name-brand{
+    padding: 15px 0px 10px 40px;
+    margin: 0 100px 0 10px;
+}
+
+header nav .name-brand h2{
+    color: #fff;
+    font-family: 'Nova Square', sans-serif;
+}
+
+header nav ul{
+    /* border: 1px solid #fff; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 8px;
+    
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    
+}
+
+header nav ul li:hover a{
+    color: #6f6f6f;
+    text-decoration: 2px underline #fff;
+    padding-top: 10px;
+    transition: all 0.1s ease;
+}
+
+header nav .search {
+    /* border: 1px solid #fff; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+header nav .search .btn {
+    display: flex;
+}
+
+header nav .search .btn button{
+    background-color: #2d2d2d;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header nav .search .btn:hover button{
+    background-color: #9c0000;
+}
+
+header nav .search .btn button i{
+    color: #fff;
+}
+
+header nav .search .btn input{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 0%;
+    
+}
+
+header nav .search .btn:hover input{
+    color: #000;
+    width: 200%;
+    padding: 0 6px;
+
+}
+
+header section{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 56%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header section .content{
+    margin: 20px 15px;
+    /* border: 1px solid #fff; */
+    width: 40%;
+    height: 90%;
+    position: relative;
+}
+
+/* start Descrip */
+header section .descripe{
+    /* border: 1px solid #9f1d1d; */
+    width: 40%;
+    height: 90%;
+    margin: 20px 15px;
+    padding:10px 15px 7px 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header section .descripe .name{
+    display: flex;
+    justify-content: space-between;
+}
+
+header section .descripe .name i{
+    color: #fff;
+    padding-right: 12px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+header section  .descripe .name h1{
+    color: #FFF;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+header section  .descripe .name h1 span{
+    padding: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* End Descrip */
+
+/* Start Paragraph */
+header section .descripe .paragraph p {
+    color: #787676;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+header section .descripe .paragraph p span{
+    padding: 0px 5px ;
+}
+
+header section .descripe .paragraph{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 10px;
+}
+
+
+header section .descripe .paragraph i{
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* End Paragraph one */
+
+/* start Paragraph two */
+header section .descripe .paragraph-Two{
+    padding-top: 15px;
+}
+
+header section .descripe .paragraph-Two p{
+    color: #FFF;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+header section .descripe .paragraph-Two .stars i{
+    color: #ebeb20;
+    font-size: 14px;
+}
+
+header section .descripe .paragraph-Two .count{
+    margin-top: 3px;
+}
+
+header section .descripe .paragraph-Two .count p{
+    font-size: 10px;
+}
+/* end paragraph two */
+
+/* start btns */
+header section .descripe .btns{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+header section .descripe .btns button{
+    padding: 15px 15px;
+    /* background-color: #fff; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: all .3s eas;
+}
+
+header section .descripe .btns button:hover{
+    background-color: #ff0000;
+    color: #ffff;
+}
+
+header section .descripe .btns button:nth-child(2){
+    background-color: #555;
+    color: #fff;
+}
+
+header section .descripe .btns button:nth-child(2):hover{
+    background-color: #2a87c1;
+}
+
+header section .descripe .btns button i{
+    font-size: 15px;
+}
+
+/* Start Descripe Three */
+
+header section .descripe .line{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 90%;
+    margin-bottom: 4px;
+}
+
+header section .descripe .line h1{
+    color: #959595;
+    margin-bottom: 3px;
+    margin-left: 17px;
+    font-weight: 200;
+}
+
+header section .descripe .line .users {
+    margin-left: 9px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: #000;
+    border-radius: 10px;
+    width:95%;
+    height: 60px;
+}
+
+header section .descripe .line .users .user{
+    display: flex;
+    justify-content: flex-start;
+}
+
+header section .descripe .line .users .user h4{
+    margin-right: auto ;
+}
+
+
+header section .descripe .line .users .user .stars-comment i{
+    font-size: 10px;
+    color: #ebeb20;
+}
+
+
+
+header section .descripe .line .users .comment p{
+    font-size: 10px;
+    color: #555;
+}
+
+
+
+header section .descripe .line .users i{
+    color: #959595;
+    width: 20px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+header section .descripe .line .users h4{
+    color: #959595;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+header section .descripe .write-comment{
+    display: flex;
+}
+
+header section .descripe .write-comment input{
+    width: 100%;
+    padding: 5px 10px 5px 7px;
+    margin-left: 7px;
+    margin-top: 2px;
+    outline: none;
+    border: none;
+    background-color: #959595;
+    border-radius: 10px;
+}
+
+header section .descripe .write-comment input::placeholder{
+    color: #000;
+}
+
+header section .descripe .write-comment button{
+    width: 10%;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    margin-left: 7px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header section .descripe .write-comment button i{
+    font-size: 17px;
+    color: #2a87c1;
+}
+
+/* End Descripe Three */
+
+
+/* start count */
+header section .content img{
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+}
+
+
+
+
+header .cards{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 29%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+
+header .cards::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 29%;
+    width: 100px;
+    background-image: linear-gradient(90deg, black, transparent);
+    
+}
+
+header .cards::after{
+    position: absolute;
+    content: '';
+    right:0%;
+    bottom: 0;
+    z-index: 99;
+    height: 29%;
+    width: 100px;
+    background-image: linear-gradient(-90deg, black, transparent);
+    
+}
+
+header .cards::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+header .cards .card {
+    /* border: 1px solid red; */
+    min-width:8%;
+    height: 95%;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+
+header .cards .card  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.7s ease-in;
+    /* position: relative; */
+}
+
+header .cards .card:hover img{
+    width: 110%;
+    height: 100%;
+}
+
+header .cards .card .post-s h4{
+    color: #ebeb20;
+    font-family: 'Rubik', sans-serif;
+    /* font-size: 20px; */
+}
+
+header .cards .card .post-s p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+header .cards .card .post-s button{
+    margin-right: 6px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+header .cards .card .post-s button i{
+    color: #ebeb20;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+header .cards .card .post-s{
+    width:100%;
+    height: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.558);
+    position: absolute;
+    bottom:0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease-in;
+}
+
+header .cards .card:hover .post-s{
+    width: 110%;
+    height: 100%;
+}
+/* End Home Page */
+
+
+
+
+
+
+
+
+/*Start new page */
